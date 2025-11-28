@@ -1,8 +1,11 @@
-import CountriesDashboard from "./components/CountriesDashboard";
+import CountriesDashboard from "./components/countries/CountriesDashboard";
+import Layout from "./components/layout/Layout";
 
 function App() {
   return (
-    <CountriesDashboard />
+    <Layout>
+      <CountriesDashboard />
+    </Layout>
   )
 }
 
