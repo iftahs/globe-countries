@@ -39,7 +39,7 @@ const SearchBar = ({ onSearch, onSort, filteredCountriesCount, isPending }: ISea
                 </div>
 
                 {/* Count Badge (Desktop & Mobile) */}
-                <div className="flex items-center justify-center px-4 py-2 bg-gray-800/50 rounded-lg border border-gray-700/50 min-w-fit">
+                <div className="flex items-center justify-center px-4 py-2 bg-gray-800/50 rounded-lg border border-gray-700/50 min-w-fit w-full md:w-auto">
                     <span className="text-gray-400 text-sm mr-2">Found:</span>
                     <span className="text-blue-400 font-semibold text-sm bg-blue-400/10 px-2 py-0.5 rounded-md">
                         {filteredCountriesCount}
