@@ -2,6 +2,8 @@
 
 A modern, responsive web application built with React and TypeScript that displays comprehensive information about countries worldwide. The application fetches real-time data from the REST Countries API and provides an interactive dashboard for exploring country details.
 
+[**View Live Demo**](https://iftahs.github.io/globe-countries/)
+
 ## Features
 
 - **Interactive Dashboard**: View a grid of countries with key information including flags, capitals, and population.
