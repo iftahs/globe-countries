@@ -17,7 +17,7 @@ const CountryItem = memo(({ country }: CountryItemProps) => (
         />
 
         <div className="p-4 flex-1 flex flex-col">
-            <h3 className="text-lg font-bold text-gray-100 mb-3 group-hover:text-blue-400 transition-colors truncate">{country.name.common}</h3>
+            <h3 className="text-lg font-bold text-gray-100 mb-3 group-hover:text-blue-400 transition-colors truncate" title={country.name.common}>{country.name.common}</h3>
 
             <div className="space-y-2 text-xs text-gray-400">
                 <InfoRow label="Capital" value={country.capital?.[0] || 'N/A'} />
