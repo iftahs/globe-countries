@@ -37,7 +37,6 @@ const CountriesDashboard = () => {
         setLoading(false);
       }
     };
-    console.log('fetching countries');
     fetchCountries();
   }, []);
 
