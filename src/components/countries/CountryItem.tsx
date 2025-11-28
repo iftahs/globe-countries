@@ -3,6 +3,8 @@ import type { Country } from '../../types';
 import CountryFlag from './CountryFlag';
 import InfoRow from './InfoRow';
 
+const BASE_URL = 'https://www.google.com/search?q=';
+
 interface CountryItemProps {
     country: Country;
 }
@@ -17,10 +19,10 @@ const CountryItem = memo(({ country }: CountryItemProps) => (
         />
 
         <div className="p-4 flex-1 flex flex-col">
-            <h3 className="text-lg font-bold text-gray-100 mb-3 group-hover:text-blue-400 transition-colors truncate" title={country.name.common}>{country.name.common}</h3>
+            <a href={`${BASE_URL}${country.name.common}`} target="_blank"><h3 className="text-lg font-bold text-gray-100 mb-3 group-hover:text-blue-400 transition-colors truncate" title={country.name.common}>{country.name.common}</h3></a>
 
             <div className="space-y-2 text-xs text-gray-400">
-                <InfoRow label="Capital" value={country.capital?.[0] || 'N/A'} />
+                <InfoRow label="Capital" value={country.capital?.[0] || 'N/A'} link={`${BASE_URL}${country.capital?.[0]}`} />
                 <InfoRow label="Population" value={country.population.toLocaleString()} />
             </div>
         </div>
