@@ -33,7 +33,7 @@ Make sure you have Node.js installed on your system.
 
 1.  Clone the repository:
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/iftahs/globe-countries
     ```
 
 2.  Navigate to the project directory:
